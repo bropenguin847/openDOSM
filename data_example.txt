@@ -1,0 +1,38 @@
+Unless specified, the id for parquet files is the same as normal API
+just add a .parquet at the back of the url
+
+Household:
+    - Income by state           : hh_income_state
+    - Poverty rates             : hh_poverty
+
+Demography:
+    - Annual Marriage                   : marriages
+    - Annual Deaths                     : deaths / death.parquet
+    - Annual Births                     : births_annual / birth.parquet
+
+Public safety:
+    - Crimes by disctric and type       : crime_district
+    - Prisoners by state and sex        : prisoners_state
+
+Labour:
+    - Monthly Youth Unemployment        : lfs_month_youth
+    - Monthly Unemployment by duration  : lfs_month_duration
+
+Environment:
+    - Monthly electricity consumption   : electricity_consumption
+    - Annual water production           : water_production
+    - Annual water consumption          : water_consumption
+    - Annual greenhouse gas emission    : ghs_emissions
+
+Economic:
+    - Extraction of minerals by state   : mineral_extraction
+    - Monthly trade by SITC section     : trade_sitc_1d
+
+-----------------------------------------------------------------------------
+Weather Forecast and Warning
+
+GET https://api.data.gov.my/weather/forecast
+GET https://api.data.gov.my/weather/warning
+GET https://api.data.gov.my/weather/warning/earthquake
+
+https://developer.data.gov.my/realtime-api/weather
